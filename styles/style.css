@@ -1,0 +1,28 @@
+html {
+ background-color: #cccccc;
+}
+
+body {
+ background-color: #cccccc;
+}
+
+#nav-top {
+  background: #FAF5EF;
+}
+
+#main-container {
+  width: 850px;
+  overflow: auto;
+  float: center;
+}
+
+#copyright {
+  font-weight: bold;
+  font-family: cursive;
+  text-shadow: 2px 2px 5px grey;
+  opacity: 0.4;
+}
+
+#navbar-img:hover {
+  opacity: 0.6;
+}

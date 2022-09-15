@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Remainders</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles\style.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+  </head>
+  <body id="body">
+    <nav class="navbar sticky-top" id="nav-top">
+      <div class="container">
+        <a class="navbar-brand" id="navbar-img" target ="blank" title ="Instagram" href="https://www.instagram.com/"><img src="https://img.icons8.com/ios-filled/42/737373/instagram-new--v1.png"/></a>
+        <a class="navbar-brand" id="navbar-img" target ="blank" title ="Google" href="https://myaccount.google.com/"><img src="https://img.icons8.com/ios-filled/40/737373/google-logo.png"/></a>
+        <a class="navbar-brand" id="navbar-img" target ="blank" title ="Linkedin" href="https://www.linkedin.com"><img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/40/737373/external-linkedin-social-media-tanah-basah-glyph-tanah-basah.png"/></a>
+        <a class="navbar-brand" id="navbar-img" target ="blank" title ="Facebook" href="https://www.facebook.com/"><img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/40/737373/external-facebook-social-media-tanah-basah-glyph-tanah-basah.png"/></a>
+        <a class="navbar-brand" id="navbar-img" target ="blank" title ="GitHub" href="https://github.com/"><img src="https://img.icons8.com/ios-filled/40/737373/github.png"/></a>
+        <a class="navbar-brand" id="navbar-img" target ="blank" title ="Twitter" href="https://twitter.com"><img src="https://img.icons8.com/ios-filled/40/737373/twitter.png"/></a>
+      </div>
+      <p id="copyright">by v!o</p></a>
+    </nav>
+
+    <div class="container" id="main-container">
+      <div class="card text-bg-light mb-1">
+        <div class="card">
+          <img src="images\j4o.gif" height ="30" class="card-img-top">
+        </div>
+        <div class="card-body">
+          <form id="formType" action="/api/user" method="POST">
+            <div class="mb-1">
+              <label class="form-label"><strong>Describe your task below</strong></label>
+              <input name="task" placeholder="Write your task here" type="text" class="form-control" id="task" required>
+            </div>
+            <div class="mb-1 form-check">
+              <input type="checkbox" class="form-check-input" id="urgent">
+              <label class="form-check-label"><em>Check this if the task is urgent !</em></label>
+            </div>
+            <button type="button" class="btn btn-success position-relative" onclick="return addTask();">Adauga
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                <div id="remainingTasks"></div>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div id="listOfTask"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
