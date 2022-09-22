@@ -30,14 +30,14 @@
         <div class="card-body">
           <form id="formType">
             <div class="mb-1">
-              <label class="form-label"><strong>Describe your task below</strong></label>
+              <label class="form-label"><strong>Describe your task and press "Add task" button below</strong></label>
               <input name="task" placeholder="Write your task here" type="text" class="form-control" id="task" required>
             </div>
             <div class="mb-1 form-check">
               <input type="checkbox" class="form-check-input" id="urgent">
               <label class="form-check-label"><em>Check this if the task is urgent !</em></label>
             </div>
-            <button type="button" class="btn btn-success position-relative" onclick="return addTask();">Adauga
+            <button type="button" class="btn btn-success position-relative" onclick="return addTask();">Add task
               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                 <div id="remainingTasks"></div>
               </span>
